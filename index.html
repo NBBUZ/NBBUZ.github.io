@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+
+        document.addEventListener('click', musicPlay);
+function musicPlay() {
+    document.getElementById('ID').play();
+    document.removeEventListener('click', musicPlay);
+}
+
+    </script>
+</head>
+<body>
+
+    <h2>Jazz Campus Innenhof</h2>
+
+    <audio id="player" autoplay loop>
+    <source src="1_Innenhof.mp3" type="audio/mp3">
+    </audio>
+    <img src="1_Jazz Campus_Innenhof.jpg" alt="Innenhof"></img>
+
+    <p>Next Room</p>
+
+</body>
+</html>
